@@ -90,11 +90,8 @@ const PostsSchema = new mongoose.Schema({
   },
   content: [ContentSchema],
   comments: [CommentSchema],
-  commentCount: {
+  timesCollected: {
     type: Number
-  },
-  isPinned: {
-    type: Boolean
   },
   tags: [{
     type: String
